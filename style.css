@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #BFD7E4;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -2;
+  
+  
+  height: 466px;
+  width: 100%;
+  background: #293241;
+}
+
+header {
+  color: white;
+  text-align: center;
+
+  margin: 107px 0 32px;
+}
+
+header h1 {
+  font-family: "Staatliches", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: auto;
+}
+
+header p{
+  font-size: 16px;
+  line-height: auto;
+
+  margin-bottom: 16px;
+}
+
+#page {
+  width: 750px;
+  
+  margin: auto;
+}
+
+#legend1 {
+  font-family: "Staatliches", sans-serif;
+  
+  background-color: #F67669;
+  color: white;
+
+  font-size: 24px;
+  line-height: 34px;  
+  
+  text-align: center;
+  padding: 50px 275px;
+  
+  border-radius: 20px 20px 0 0;
+}
+
+#legend2 {
+  font-family: "Staatliches", sans-serif;
+  color: #253B51;
+
+  font-size: 24px;
+  line-height: 34px;  
+  
+  text-align: center;
+  
+  padding: 32px 0 8px;
+  margin: 0 auto 40px;
+
+  border-bottom: 1px solid #E6E6F0;
+  width: 622px;
+}
+
+#legend3 {
+  font-family: "Staatliches", sans-serif;
+  color: #253B51;
+
+  font-size: 24px;
+  line-height: 34px;  
+  
+  text-align: center;
+  
+  padding: 0 0 8px;
+  margin: 0 auto 40px;
+
+  border-bottom: 1px solid #E6E6F0;
+  width: 622px;
+}
+
+form {
+  background: white;
+
+  padding: 32px 64px 64px 64px;
+
+  border-radius: 0 0 20px 20px;
+
+  margin-bottom: 392px;
+}
+
+fieldset {
+  border: none;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+select {
+  font-family: "Poppins", sans-serif;
+  color: #686767;
+
+  font-size: 16px;
+  line-height: 26px;
+
+  background: #FAFAFC;
+
+  width: 300px;
+  height: 56px;
+
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+
+  padding: 0 16px;
+
+  appearance: none;
+}
+
+.col-2 {
+  display: flex;
+  gap: 22px;
+}
+
+fieldset input {
+  font-family: "Poppins", sans-serif;
+  color: #686767;
+
+  font-size: 16px;
+  line-height: 26px;
+
+  background: #FAFAFC;
+
+  height: 56px;
+
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+
+  padding: 0 16px;
+}
+
+#mailmargin {
+  margin-top: 16px;
+}
+
+fieldset label {
+  margin-bottom: 8px;
+}
+
+#labelfeedback {
+  margin-top: 32px;
+}
+
+textarea {
+  font-family: "Poppins", sans-serif;
+  color: #686767;
+
+  font-size: 16px;
+  line-height: 26px;
+
+  background: #FAFAFC;
+
+  width: 608px;
+  height: 167px;
+
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  
+  padding: 8px 16px;
+
+  resize: none;
+}
+
+span {
+  color: #C1BCCC;
+  font-size: 12px;
+  line-height: 20px;
+
+  margin-left: 6px;
+}
+
+.checkbox-wrapper {
+  position: relative;
+
+  margin: 30px auto 36px;
+}
+
+.checkbox-wrapper label {
+  display:flex;
+  align-items: center;
+  gap: 16px;
+
+  margin: 0;
+}
+
+.checkbox-wrapper input {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+
+  opacity: 0;
+}
+
+.checkbox-wrapper label::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: block;
+
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+}
+
+.checkbox-wrapper input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.00016 16.1698L4.83016 11.9998L3.41016 13.4098L9.00016 18.9998L21.0002 6.99984L19.5902 5.58984L9.00016 16.1698Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+}
+
+.checkbox-wrapper input:hover + label::before {
+  outline: 1px solid black;
+}
+
+.col-3 {
+  display: flex;
+  align-items: flex-end;
+}
+
+.col-3 #data {
+  margin-right: 32px;
+}
+
+.col-3 #hora1 {
+  margin-right: 10px;
+  margin-top: 8px;
+}
+
+.col-3 #hora2 {
+  margin-top: 8px;
+}
+
+button {
+  font-family: "Staatliches", sans-serif;
+  color: white;
+  background: #F67669;
+
+  font-size: 20px;
+  line-height: 26px;
+
+  padding: 12px 286px 12px;
+  margin-top: 76px;
+
+  border: none;
+  border-radius: 8px;
+}
+
+button:hover {
+  background: #9c4e46;
+}
